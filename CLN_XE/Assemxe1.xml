@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<SimscapeMultibodyImportXML version="2.0" xmlns="urn:mathworks:SimscapeMultibody:import" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<Created by="" on="08/18/21||22:52:53" using="Simscape Multibody Link Version 6.1" from="SolidWorks 24.3.0"/>
+<ModelUnits mass="kilogram" length="millimeter"/>
+<DataUnits mass="kilogram" length="meter"/>
+<RootAssembly name="Assemxe1" uid="Assemxe1" version="146">
+<AssemblyFile name="Assemxe1.SLDASM" type="SolidWorks Assembly"/>
+<InstanceTree>
+<Instance name="base-1" uid="base-1" grounded="true" entityUid="base*:*Default">
+<Transform>
+<Rotation>1 0 0 0 1 0 0 0 1</Rotation>
+<Translation>-0.58259737787468591 0.82809278431763822 -1.9607939464535256</Translation>
+</Transform>
+</Instance>
+<Instance name="xeCart-2" uid="xeCart-2" entityUid="xeCart*:*Default">
+<Transform>
+<Rotation>1 0 0 0 1 0 0 0 1</Rotation>
+<Translation>-0.45109088525713043 0.90809278431763829 -1.9607939464535256</Translation>
+</Transform>
+</Instance>
+<Instance name="pendulum-2" uid="pendulum-2" entityUid="pendulum*:*Default">
+<Transform>
+<Rotation>0.99619469809174532 -0.087155742747658055 0 0.087155742747658055 0.99619469809174532 0 0 0 1</Rotation>
+<Translation>-0.45109088525713043 0.96809278431763823 -1.9607939464535256</Translation>
+</Transform>
+</Instance>
+</InstanceTree>
+<Constraints>
+<Coincident name="Coincident7">
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>base-1</Uid>
+</InstancePath>
+<Position>0 0.010000000000000009 0</Position>
+<Axis>0 1 0</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>xeCart-2</Uid>
+</InstancePath>
+<Position>0 -0.070000000000000062 0</Position>
+<Axis>0 -1 0</Axis>
+</ConstraintGeometry>
+</Coincident>
+<Coincident name="Coincident9">
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>base-1</Uid>
+</InstancePath>
+<Position>0 0 0</Position>
+<Axis>0 0 1</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>xeCart-2</Uid>
+</InstancePath>
+<Position>0 0 0</Position>
+<Axis>0 0 1</Axis>
+</ConstraintGeometry>
+</Coincident>
+<Coincident name="Coincident10">
+<ConstraintGeometry geomType="circle">
+<InstancePath>
+<Uid>xeCart-2</Uid>
+</InstancePath>
+<Position>0 0.060000000000000053 0.024999999999999911</Position>
+<Axis>0 0 1</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="circle">
+<InstancePath>
+<Uid>pendulum-2</Uid>
+</InstancePath>
+<Position>0 0 0.024999999999999911</Position>
+<Axis>0 0 1</Axis>
+</ConstraintGeometry>
+</Coincident>
+</Constraints>
+<Frames>
+</Frames>
+</RootAssembly>
+<Assemblies>
+</Assemblies>
+<Parts>
+<Part name="base" uid="base*:*Default" version="109">
+<ModelUnits mass="kilogram" length="millimeter"/>
+<PartFile name="base.SLDPRT" type="SolidWorks Part"/>
+<MassProperties>
+<Mass>13.750000000000002</Mass>
+<CenterOfMass>0 0.0050000000000000001 0</CenterOfMass>
+<Inertia>0.44770572916666673 5.9934244791666691 5.5459479166666696 0 0 0</Inertia>
+</MassProperties>
+<GeometryFile name="base_Default_sldprt.STEP" type="STEP"/>
+<VisualProperties>
+<Ambient r="0.792156862745098" g="0.81960784313725488" b="0.93333333333333335" a="1"/>
+<Diffuse r="0.792156862745098" g="0.81960784313725488" b="0.93333333333333335" a="1"/>
+<Specular r="0.396078431372549" g="0.40980392156862744" b="0.46666666666666667" a="1"/>
+<Emissive r="0" g="0" b="0" a="1"/>
+<Shininess>0.40000000596046448</Shininess>
+</VisualProperties>
+<Frames>
+</Frames>
+</Part>
+<Part name="pendulum" uid="pendulum*:*Default" version="168">
+<ModelUnits mass="kilogram" length="millimeter"/>
+<PartFile name="pendulum.SLDPRT" type="SolidWorks Part"/>
+<MassProperties>
+<Mass>0.042863053218407964</Mass>
+<CenterOfMass>-2.4857185427044138e-07 0.22902427649485718 0</CenterOfMass>
+<Inertia>0.0010253033472338994 1.3295980831412731e-06 0.0010245102448456522 0 1.3485027191040381e-10 -1.9510594337314174e-09</Inertia>
+</MassProperties>
+<GeometryFile name="pendulum_Default_sldprt.STEP" type="STEP"/>
+<VisualProperties>
+<Ambient r="0.792156862745098" g="0.81960784313725488" b="0.93333333333333335" a="1"/>
+<Diffuse r="0.792156862745098" g="0.81960784313725488" b="0.93333333333333335" a="1"/>
+<Specular r="0.396078431372549" g="0.40980392156862744" b="0.46666666666666667" a="1"/>
+<Emissive r="0" g="0" b="0" a="1"/>
+<Shininess>0.40000000596046448</Shininess>
+</VisualProperties>
+<Frames>
+<Frame name="cord_pendulumTop" uid="cord_pendulumTop">
+<Transform>
+<Rotation>1 0 0 0 1 0 0 0 1</Rotation>
+<Translation>0 0.5 0</Translation>
+</Transform>
+</Frame>
+</Frames>
+</Part>
+<Part name="xeCart" uid="xeCart*:*Default" version="185">
+<ModelUnits mass="kilogram" length="millimeter"/>
+<PartFile name="xeCart.SLDPRT" type="SolidWorks Part"/>
+<MassProperties>
+<Mass>7.6109601685880772</Mass>
+<CenterOfMass>0 -0.00057821824419924863 0</CenterOfMass>
+<Inertia>0.047449057663211558 0.09816853938740043 0.063813024132137491 0 0 0</Inertia>
+</MassProperties>
+<GeometryFile name="xeCart_Default_sldprt.STEP" type="STEP"/>
+<VisualProperties>
+<Ambient r="0.792156862745098" g="0.81960784313725488" b="0.93333333333333335" a="1"/>
+<Diffuse r="0.792156862745098" g="0.81960784313725488" b="0.93333333333333335" a="1"/>
+<Specular r="0.396078431372549" g="0.40980392156862744" b="0.46666666666666667" a="1"/>
+<Emissive r="0" g="0" b="0" a="1"/>
+<Shininess>0.40000000596046448</Shininess>
+</VisualProperties>
+<Frames>
+<Frame name="cord_force" uid="cord_force">
+<Transform>
+<Rotation>1 0 0 0 1 0 0 0 1</Rotation>
+<Translation>-0.14999999999999991 0 0</Translation>
+</Transform>
+</Frame>
+</Frames>
+</Part>
+</Parts>
+</SimscapeMultibodyImportXML>
